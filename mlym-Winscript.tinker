@@ -1,0 +1,308 @@
+﻿	// Malayalam Winscript Keyboard in Tinker Format
+	// Version 1.000
+
+	// History:
+	// 2015-04-29 Initial version
+
+
+---  // Begin header section
+Settings:
+  TinkerVersion: 2.000
+  CapsSensitive: No
+Options:
+  - checkbox:
+    name: ViramaAnywhere
+    label: Allow chandrakkala to be typed even after vowels
+    default: 0
+  - checkbox: 
+    name: ScriptDigit
+    label: Use Malayalam digits rather than Western digits by default 
+    default: 0
+  - checkbox: 
+    name: SmartQuotes
+    label: Enable use of left and right quote marks
+    default: 0
+  - checkbox: 
+    name: AtomicChillu
+    label: Use atomic Chillu characters
+    default: 1
+  - keystroke:
+    name: ANUSVARA
+  - keystroke:
+    name: VISARGA
+  - keystroke:
+    name: AVAGRAHA
+  - keystroke:
+    name: A
+  - keystroke:
+    name: AA
+  - keystroke:
+    name: I
+  - keystroke:
+    name: II
+  - keystroke:
+    name: U
+  - keystroke:
+    name: UU
+  - keystroke:
+    name: VOC_R
+  - keystroke:
+    name: VOC_RR
+  - keystroke:
+    name: VOC_L
+  - keystroke:
+    name: VOC_LL
+  - keystroke:
+    name: E
+  - keystroke:
+    name: EE
+  - keystroke:
+    name: AI
+  - keystroke:
+    name: O
+  - keystroke:
+    name: OO
+  - keystroke:
+    name: AU
+  - keystroke:
+    name: KA
+  - keystroke:
+    name: KHA
+  - keystroke:
+    name: GA
+  - keystroke:
+    name: GHA
+  - keystroke:
+    name: NGA
+  - keystroke:
+    name: CA
+  - keystroke:
+    name: CHA
+  - keystroke:
+    name: JA
+  - keystroke:
+    name: JHA
+  - keystroke:
+    name: NYA
+  - keystroke:
+    name: TTA
+  - keystroke:
+    name: TTHA
+  - keystroke:
+    name: DDA
+  - keystroke:
+    name: DDHA
+  - keystroke:
+    name: NNA
+  - keystroke:
+    name: TA
+  - keystroke:
+    name: THA
+  - keystroke:
+    name: DA
+  - keystroke:
+    name: DHA
+  - keystroke:
+    name: NA
+  - keystroke:
+    name: PA
+  - keystroke:
+    name: PHA
+  - keystroke:
+    name: BA
+  - keystroke:
+    name: BHA
+  - keystroke:
+    name: MA
+  - keystroke:
+    name: YA
+  - keystroke:
+    name: RA
+  - keystroke:
+    name: RRA
+  - keystroke:
+    name: LA
+  - keystroke:
+    name: LLA
+  - keystroke:
+    name: VA
+  - keystroke:
+    name: SHA
+  - keystroke:
+    name: SSA
+  - keystroke:
+    name: SA
+  - keystroke:
+    name: HA
+  - keystroke:
+    name: JOIN
+  - keystroke:
+    name: NONJOIN
+  - keystroke:
+    name: TOGGLE
+
+...  // End of header
+
+// _________________________________________
+define consN [ക-ഹ]		// consonants except chillu ൺ-ൿ
+
+// _________________________________________
+//   Initial glyphs
+
+〔ANUSVARA〕	> 【ം】	// ANUSVARA 
+〔VISARGA〕	> 【ഃ】	// VISARGA
+〔AVAGRAHA〕	> 【ഽ】	// AVAGRAHA
+
+
+// _________________________________________
+// Consonants
+
+〔KA〕	> 【ക】		// LETTER KA
+〔KHA〕	> 【ഖ】		// LETTER KHA
+〔GA〕	> 【ഗ】		//	LETTER GA
+〔GHA〕	> 【ഘ】		//	LETTER GHA
+〔NGA〕	> 【ങ】		//	LETTER NGA
+〔CA〕	> 【ച】		//	LETTER CA
+〔CHA〕	> 【ഛ】		//	LETTER CHA
+〔JA〕	> 【ജ】		//	LETTER JA
+〔JHA〕	> 【ഝ】		//	LETTER JHA
+〔NYA〕	> 【ഞ】		//	LETTER NYA
+〔TTA〕	> 【ട】		//	LETTER TTA
+〔TTHA〕	> 【ഠ】		//	LETTER TTHA
+〔DDA〕	> 【ഡ】		//	LETTER DDA
+〔DDHA〕	> 【ഢ】		//	LETTER DDHA
+〔NNA〕	> 【ണ】		//	LETTER NNA
+〔TA〕 	> 【ത】		//	LETTER TA
+〔THA〕	> 【ഥ】		//	LETTER THA
+〔DA〕	> 【ദ】		//	LETTER DA
+〔DHA〕	> 【ധ】		//	LETTER DHA
+〔NA〕	> 【ന ണ ഞ ങ】		//	LETTER NA
+〔PA〕 	> 【പ ഫ】			//	LETTER PA
+〔PHA〕	> 【ഫ】		//	LETTER PHA
+〔BA〕	> 【ബ】		//	LETTER BA
+〔BHA〕	> 【ഭ】		//	LETTER BHA
+〔MA〕	> 【മ】		//	LETTER MA
+〔YA〕	> 【യ】		//	LETTER YA
+〔RA〕	> 【ര റ】	//	LETTER RA
+〔RRA〕	> 【ര റ】	//	LETTER RA, RRA
+〔LA〕 	> 【ല ള ഴ】	//	LETTER LA
+〔LLA〕 	> 【ള ഴ】	//	LETTER LLA
+〔VA〕	> 【വ】		//	LETTER VA
+〔SHA〕	> 【ശ】	//	LETTER SHA
+〔SSA〕	> 【ഷ】		//	LETTER SSA
+〔SA〕	> 【സ ഷ ശ】		//	LETTER SA
+〔HA〕	> 【ഹ】		//	LETTER HA
+
+// _________________________________________
+//  Vowels
+
+function DoVowel 【syl】【dep】
+	after 【〔consN〕】 send 【〔dep〕】
+	| 【〔syl〕】
+
+〔A〕	> after 【〔consN〕】 send 【〔1〕】 // Deadkey that simplifies typing  ഗഏ as gae  
+	| map 【〔1〕 ാ അ ആ】
+	| 【അ】
+〔AA〕	> DoVowel 【ആ】【ാ】 //	LETTER AA, VOWEL SIGN AA
+〔I〕	> map 【ി ീ ീഇ ിഇ】【ഇ ഈ】	// enables you to type ii to get long i.  if you actually wanted a sequence of i, keep pressing i.
+	| DoVowel 【ഇ】【ി】		//	LETTER I, VOWEL SIGN I
+〔II〕	> DoVowel 【ഈ】【ീ】		//	LETTER II, VOWEL SIGN II
+〔U〕	> map 【ു ൂ ൂഉ ുഉ】【ഉ ഊ】
+	| DoVowel 【ഉ】【ു】 		//	LETTER U, VOWEL SIGN U
+〔UU〕	> DoVowel 【ഊ】【ൂ】 		//	LETTER UU, VOWEL SIGN UU
+〔VOC_R〕	> DoVowel 【ഋ】【ൃ】		//	LETTER VOCALIC R, VOWEL SIGN VOCALIC R
+〔VOC_RR〕	> DoVowel 【ൠ】【ൄ】		//	LETTER VOCALIC R, VOWEL SIGN VOCALIC R
+〔VOC_L〕	> DoVowel 【ഌ】【ൢ】		//	LETTER VOCALIC L, VOWEL SIGN VOCALIC L
+〔VOC_LL〕	> DoVowel 【ൡ】【ൣ】	//	LETTER VOCALIC LL, VOWEL SIGN VOCALIC LL
+〔E〕	> map 【െ േ ൈ ൅】【എ ഏ ഐ ഍】
+	| DoVowel 【എ】【െ】			//	LETTER E, VOWEL SIGN E
+〔EE〕	> map 【െ േ ൈ ൅】【എ ഏ ഐ ഍】
+	| DoVowel 【ഏ】【േ】		//	LETTER EE, VOWEL SIGN EE
+〔AI〕	> DoVowel 【ഐ】【ൈ】		//	LETTER AI, VOWEL SIGN AI
+〔O〕	> map 【ഒ ഓ ഔ】【ൊ ോ ൌ】
+	| DoVowel 【ഒ】【ൊ】 		//	LETTER O, VOWEL SIGN O
+〔OO〕 > map 【ഒ ഓ ഔ ഑】【ൊ ോ ൌ ൉】
+	| DoVowel 【ഓ】【ോ】 		//	LETTER OO, VOWEL SIGN OO
+〔AU〕	> DoVowel 【ഔ】【ൌ】		//	LETTER AU, VOWEL SIGN AU
+
+
+
+// _________________________________________
+
+〔JOIN〕 > after 【〔consN〕】 send 【്】 	// If consonant context, send virama
+	⌘if 〔AtomicChillu〕 ⌘then 
+		| map 【ണ് ൺ】【ന് ൻ】【ര് ർ】【റ് ർ】【ല് ൽ】【ള് ൾ】【ക് ൿ】 
+	⌘endif
+	| after 【്】 send 【〔200D〕】		// If virama context, send ZW Joiner // maybe some additional cue would be helpful, like a click or something in the tooltip
+	| replace 【 】 with 【〔200D〕】		// To get an isolated ZWJ, type:  {space} {x}
+	⌘if 〔ViramaAnywhere〕 ⌘then 
+		| 【്】 
+	⌘endif
+
+〔NONJOIN〕	> after 【〔consN〕】 send 【്〔200C〕】 	// If consonant context, send virama ZWNJ
+	| replace 【 】 with 【〔200C〕】		// To get an isolated ZWNJ, type:  {space} {shift x}
+	// else if virama or virama+ZWJ, we could replace that with virama+ZWNJ
+	// else we could perhaps do some other kind of vowel alternation here
+
+// Toggles prior chars between alternate forms.  // TODO: TrayTip conjuct type
+〔TOGGLE〕	> after 【്】 replace 【(〔consN〕)】 with 【〔200D〕$1】 // insert joiner between virama & cons
+	| after 【്】 replace 【〔200D〕(〔consN〕)】 with 【〔200C〕$1】 // replace ZWJ with ZWNJ between virama & cons
+	| after 【്】 replace 【〔200C〕(〔consN〕)】 with 【$1】 // remove ZWNJ between virama & cons
+	| loopMap 【0 ൦】【1 ൧】【2 ൨】【3 ൩】【4 ൪】【5 ൫】【6 ൬】【7 ൭】【8 ൮】【9 ൯】 // toggle western/dev digits
+		【ആ ാ】【ഇ ി】【ഈ ീ】【ഉ ു】【ഊ ൂ】【ഋ ൃ】【ൠ ൄ】【ഌ ൢ】【ൡ ൣ】 // For vowels, toggle between dependent and independent
+		【“ " ”】【‘ ' ’】	// toggle plain/typographer quotes
+		【। .】//【 】【 】【 】		// other variations to toggle
+	| map 【\ 〔TOGGLE〕】 
+	| 【〔TOGGLE〕】 
+	
+
+(	> 【( [ {】  // double tap (parens) to get [square brackets]; triple tap for {curly braces}
+)	> 【) ] }】
+$	> 【₹ $ ₨】
+
+
+	
+// Dash key: double-tap for n-dash, triple-tap for m-dash. If more than that, just go back to all dashes.
+- > after 【----】 send 【-】
+  | 【- – — ----】
+
+⌘if 〔SmartQuotes〕 ⌘then
+"	> loopMap 【" “ ”】
+	| after 【[^\[ ‘\t\n\(⌊\[\{]】 send 【”】 
+	| 【“】
+	
+'	> loopMap 【' ‘ ’】
+	| after 【[^\[ “\t\n\(⌊\[\{]】 send 【’】 
+	| 【‘】
+⌘endif
+
+.	> map 【.. …】
+	| 【.】  
+
+//...*** ALL DIGIT KEYS
+function DoDigit 【western】【script】【reverse】
+	after 【[0-9]】 send 【〔western〕】
+	| after 【[൦-൯]】 send 【〔script〕】
+	| ⌘if 〔ScriptDigit〕 ^ 〔reverse〕 ⌘then 【〔script〕】 ⌘else 【〔western〕】 ⌘endif 
+
+0	> DoDigit 【0】【൦】【0】
+1	> DoDigit 【1】【൧】【0】
+2	> DoDigit 【2】【൨】【0】
+3	> DoDigit 【3】【൩】【0】
+4	> DoDigit 【4】【൪】【0】
+5	> DoDigit 【5】【൫】【0】
+6	> DoDigit 【6】【൬】【0】
+7	> DoDigit 【7】【൭】【0】
+8	> DoDigit 【8】【൮】【0】
+9	> DoDigit 【9】【൯】【0】
+
+>!0	> DoDigit 【0】【൦】【1】
+>!1	> DoDigit 【1】【൧】【1】
+>!2	> DoDigit 【2】【൨】【1】
+>!3	> DoDigit 【3】【൩】【1】
+>!4	> DoDigit 【4】【൪】【1】
+>!5	> DoDigit 【5】【൫】【1】
+>!6	> DoDigit 【6】【൬】【1】
+>!7	> DoDigit 【7】【൭】【1】
+>!8	> DoDigit 【8】【൮】【1】
+>!9	> DoDigit 【9】【൯】【1】
